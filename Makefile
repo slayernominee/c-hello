@@ -8,5 +8,7 @@ all: $(TARGET)
 $(TARGET): $(SRC)
 	$(CC) $(CFLAGS) -o $(TARGET) $(SRC)
 
+install: $(TARGET)
+
 clean:
 	rm -f $(TARGET)
